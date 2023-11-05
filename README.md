@@ -21,27 +21,11 @@ var Stdout io.Writer = os.Stdout
 ```
 Stdout is the io.Writer to which executed commands write standard output.
 
-
-## func OpenFile
+## func Open
 ``` go
-func OpenFile(path string) error
+func Open(url string) error
 ```
-OpenFile opens new browser window for the file path.
-
-
-## func OpenReader
-``` go
-func OpenReader(r io.Reader) error
-```
-OpenReader consumes the contents of r and presents the
-results in a new browser window.
-
-
-## func OpenURL
-``` go
-func OpenURL(url string) error
-```
-OpenURL opens a new browser window pointing to url.
+Open opens a new browser window pointing to directory/file at the given path.
 
 
 
